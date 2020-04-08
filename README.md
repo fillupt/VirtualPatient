@@ -8,6 +8,8 @@ Version 1.0
 
 Initial test build of WebGL on Github pages.
 
+Beware, there be bugs. Access at https://fillupt.github.io/VirtualPatient/ 
+
 Tests Implemented:
 *Cover Test (test and practice modes)
 *Visual Acuity (partial)
