@@ -1,7 +1,7 @@
 {
-"companyName": "VirtualEyesLab",
+"companyName": "VirtualEyes",
 "productName": "Virtual Patient",
-"productVersion": "1.22",
+"productVersion": "1.24",
 "dataUrl": "VirtualPatient.data.unityweb",
 "wasmCodeUrl": "VirtualPatient.wasm.code.unityweb",
 "wasmFrameworkUrl": "VirtualPatient.wasm.framework.unityweb",
