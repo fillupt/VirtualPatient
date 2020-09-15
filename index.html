@@ -4,22 +4,20 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity WebGL Player | Virtual Patient</title>
-    <link rel="shortcut icon" href="TemplateData/favicon.ico">
-    <link rel="stylesheet" href="TemplateData/style.css">
-    <script src="TemplateData/UnityProgress.js"></script>
-    <script src="Build/UnityLoader.js"></script>
-    <script>
-      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/VirtualPatient.json", {onProgress: UnityProgress});
-    </script>
   </head>
-  <body>
-    <div class="webgl-content">
-      <div id="unityContainer" style="width: 1366px; height: 768px"></div>
-      <div class="footer">
-        <div class="webgl-logo"></div>
-        <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
-        <div class="title">Virtual Patient</div>
-      </div>
-    </div>
+  <body style="text-align: center">
+    <canvas id="unity-canvas" style="width: 1366px; height: 768px; background: #231F20"></canvas>
+    <script src="Build/VirtualPatient.loader.js"></script>
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/VirtualPatient.data.gz",
+        frameworkUrl: "Build/VirtualPatient.framework.js.gz",
+        codeUrl: "Build/VirtualPatient.wasm.gz",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "VirtualEyes",
+        productName: "Virtual Patient",
+        productVersion: "1.3",
+      });
+    </script>
   </body>
 </html>
