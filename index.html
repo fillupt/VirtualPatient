@@ -32,7 +32,7 @@
         streamingAssetsUrl: "StreamingAssets",
         companyName: "VirtualEyes",
         productName: "Virtual Patient",
-        productVersion: "1.4",
+        productVersion: "1.5",
       };
 
       var container = document.querySelector("#unity-container");
@@ -48,6 +48,7 @@
         canvas.style.width = "1366px";
         canvas.style.height = "768px";
       }
+      canvas.style.background = "url('" + buildUrl + "/VirtualPatient.jpg') center / cover";
       loadingBar.style.display = "block";
 
       var script = document.createElement("script");
