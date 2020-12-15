@@ -9,5 +9,5 @@ Beware, there be bugs. Access at https://fillupt.github.io/VirtualPatient/
 Tests Implemented:
 *Cover Test (test and practice modes)
 *Visual Acuity (test and practice modes)
-*Motility (test and practice modes coming very soon!)
+*Motility (test and practice modes)
 *Pupils (next...)
