@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Virtual Patient</title>
+    <title>SOVS Virtual Patient</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
@@ -17,7 +17,7 @@
         </div>
       </div>
       <div id="unity-mobile-warning">
-        WebGL builds are not supported on mobile devices.
+        Not this isn't perfectly optimised for mobile yet - try running in desktop mode
       </div>
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
@@ -27,15 +27,15 @@
     </div>
     <script>
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/VirtualPatient.loader.js";
+      var loaderUrl = buildUrl + "/Desktop.loader.js";
       var config = {
-        dataUrl: buildUrl + "/VirtualPatient.data",
-        frameworkUrl: buildUrl + "/VirtualPatient.framework.js",
-        codeUrl: buildUrl + "/VirtualPatient.wasm",
+        dataUrl: buildUrl + "/Desktop.data",
+        frameworkUrl: buildUrl + "/Desktop.framework.js",
+        codeUrl: buildUrl + "/Desktop.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "VirtualEyes",
         productName: "Virtual Patient",
-        productVersion: "1.71",
+        productVersion: "1.72",
       };
 
       var container = document.querySelector("#unity-container");
@@ -56,7 +56,7 @@
         canvas.style.width = "1366px";
         canvas.style.height = "768px";
       }
-      canvas.style.background = "url('" + buildUrl + "/VirtualPatient.jpg') center / cover";
+      canvas.style.background = "url('" + buildUrl + "/Desktop.jpg') center / cover";
       loadingBar.style.display = "block";
 
       var script = document.createElement("script");
